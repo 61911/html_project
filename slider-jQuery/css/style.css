@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "Tahoma" , sans-serif;
+  color:black;
+  background: rgba(213, 211, 211, 0.56);
+  line-height: 1.6em;
+  font-size: 16px;
+}
+
+span{
+  color:red;
+}
+
+ul,li{
+  list-style: none;
+}
+#container{
+  left: 300px;
+  width: 60%;
+  margin:30px auto;
+  overflow: auto;
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title{
+    height: 40px;
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+    background-color:black;
+}
+.faq li{
+  padding:20px;
+}
+.faq li.q{
+  background: rgb(172, 172, 172);
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+}
+.rotate{
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.faq li.a{
+  display: none;
+}
+@media(max-width:800px){
+  #container{
+    width: 90%;
+  }
+}

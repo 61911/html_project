@@ -1,0 +1,30 @@
+<!-- i am the creator of this code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript"src="jQuery.js"></script>
+ <script>
+   $(document).ready(function() {
+       $("#btn").click(function() {
+           var lable = $("#btn").text().trim();
+           if(lable == "Hide")
+           {
+             $("#btn").text("Show");
+             $("#text").hide();
+           }else{
+             $("#btn").text("Hide");
+             $("#text").show();
+           }
+       });
+   });
+ </script>
+</head>
+<body>
+  <button id="btn">Hide</button>
+  <p id="text">i am going hide and show</p>
+</body>
+</html>

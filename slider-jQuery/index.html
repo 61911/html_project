@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>jQuery-slider</title>
+          <link rel="stylesheet" href="css/style.css">
+              <!--<script type="text/javascript" src="script.js"></script> -->
+                  <script type="text/javascript" src="jQuery.js"></script>
+                  <script>
+                  var action = "click";
+                  var speed = "500";
+                  $(document).ready(function() {
+                      $('li.q').on(action ,function() {
+                            $(this).next()
+                            .slideToggle(speed)
+                            .siblings('li.a')
+                            .slideUp(speed);
+
+                        //Get images from active question
+                        var img = $(this).children('img');
+                        //Remove rotate class from all other active
+                        $('img').not(img).removeClass('rotate');
+                        //Toggle rotate remove class
+                        img.toggleClass('rotate');
+                      });
+                  });
+
+                  </script>
+
+          </head>
+    <body>
+     <div id="container">
+
+
+       <div class="title"><h1>jQuery <span>Faq Slider</span></h1></div>
+       <ul class="faq">
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ex ea commodo consequat.</li>
+
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  ex ea commodo consequat.</li>
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+
+        <li class="q"><img src="images\right-arrow.jpg" alt="images not found">Lorem ipsum dolor sit amet, consectetur adipisicing elit?</li>
+        <li class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
+
+        </ul>
+
+     </div>
+</body>
+</html>

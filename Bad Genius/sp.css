@@ -1,0 +1,76 @@
+body{
+    background:url(abc.jpg) no-repeat;
+	background-size:cover;
+	font-family:Arial;
+	}
+	#hello
+{
+	font-size:25px;
+}
+#main1{
+	height:50px;
+	width:450px;
+	float:left;
+
+	}
+	#main2{
+	height:100px;
+	width:500px;
+	float:right;
+
+	}
+	li a {
+    display: block;
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+h1{
+
+  margin-top:150px;
+  margin-left:30px;
+ margin-bottom:5px;
+ text-shadow: 7px 7px 7px white;
+  font-size: 2.5rem;
+
+
+}
+
+h2
+{
+	font-family: open_sanslight;
+  font-size: 4.0rem;
+   font-weight: 300;
+   margin-left: 100px;
+   margin-top: 150px;
+   text-shadow: 2px 7px 7px white;
+  position: relative;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:transparent; left:200px; top:200px;}
+    25%  {background-color:transparent; left:0px; top:0px;}
+
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:transparent; left:200px; top:200px;}
+    25%  {background-color:transparent; left:0px; top:0px;}
+
+
+}
+}

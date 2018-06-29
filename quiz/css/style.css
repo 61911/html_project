@@ -1,0 +1,64 @@
+body
+{
+
+  background: url(back1.jpg) top;
+  font-size: 14px;
+}
+#container
+{
+  background: url(back.jpg) top; 
+  top;
+  color:white;
+  padding: 25px;
+  margin: 20px auto;
+  overflow: auto;
+  width: 60%;
+  ;
+}
+header
+{
+  text-align: center;
+  border-bottom: orange;
+}
+header h1
+{
+  margin: 0;
+  padding: 0;
+}
+header p
+{
+  font-weight: bold;
+  padding: 0;
+  margin-top:5px;
+  color: orange;
+  font-style: oblique;
+}
+section
+{
+  min-height: 400px;
+}
+footer
+{
+  font-weight: bold;
+  text-align: center;
+}
+input[type='submit']
+{
+  background: black;
+  border:0;
+  color: white;
+  padding: 10px 15px;
+  margin:10px 0;
+}
+#results h3
+{
+	padding: 10px;
+	margin: 10px 0;
+  background: brown;
+  font-weight: bold;
+}
+#results span
+{
+  color:pink;
+  font-weight: bold;
+}
